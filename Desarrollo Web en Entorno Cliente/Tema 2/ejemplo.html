@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<meta name="author" content = "Elena Delgado">
+<meta name="keywords" content = "">
+<meta name="description" content="Ejercicios de ejemplos de clase">
+</head>
+<body>
+    <p id="demo">Funciones</p>
+    <script>
+    function suma(a,b){
+        return a - b;
+    }
+    let x;
+    x = suma(3, 4);
+    document.getElementById("demo").innerHTML = typeof suma + "<br>";
+    document.getElementById("demo").innerHTML += " " + suma(3,8) + "<br>";
+    document.getElementById("demo").innerHTML += " " + suma + "<br>";
+
+    document.getElementById("demo").innerHTML = ("3" !== 4)+"<br>";
+    document.getElementById("demo").innerHTML += ("3" === 3);
+
+    </script>
+</body>
+</html>
