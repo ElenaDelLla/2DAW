@@ -17,7 +17,7 @@
                             <input id="name" type="text" name="name" placeholder="Enter your name:"/> 
                         </div>
                         <div class="form-section">
-                            <label for="password">Contraseña:</Label> 
+                            <label for="password">Contraseña:</label> 
                             <input id="password" type="password" name="password" placeholder="Enter your password:"/> 
                         </div>
                         <div class="form-section">
@@ -25,15 +25,15 @@
                             <input id="email" type="text"  name="email" placeholder="Enter your email">
                         </div>
                         <div class="form-section">
-                            <label for="dateofbirth">Date of Birth:</Label> 
+                            <label for="dateofbirth">Date of Birth:</label> 
                             <input id="dateofbirth" type="date" name="dateofbirth" placeholder="Enter your date of birth">
                         </div>
                         <div class="form-section">
-                            <label for="telephone">Telefono Móvil:</Label> 
+                            <label for="telephone">Telefono Móvil:</label> 
                             <input id="telephone" type="tel" name="tel" placeholder="Enter your telephone">
                         </div>
                         <div class="form-section">
-                            <label for="shop">Closest Shop:</Label> 
+                            <label for="shop">Closest Shop:</label> 
                             <select id="shop" name="shop">
                                 <option value="Madrid">Madrid</option>
                                 <option value="Barcelona">Barcelona</option>
