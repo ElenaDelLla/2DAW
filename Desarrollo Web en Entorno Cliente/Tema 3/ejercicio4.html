@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body><input type="text" id="cont">
+    <br>
+    <button id="incrementar">Incrementar contador</button>
+    <button id="pararContador">Para contador</button>
+    <button id="mostrarContador">Mostrar contador</button>
+    <button id="stopCont">Parar contador set</button>
+    
+    <script>
+            //Ejercicio 4
+
+            //Apartado 1
+
+            const tiempo = 1000;
+            let contador = 1;
+            let stop;
+            document.getElementById("cont").value="";
+            incrementar.onclick = btn_incrementar_fn;
+            function incrementar_fn(){
+                contador++;
+                document.getElementById("cont").value += contador + " ";
+            }
+            function btn_incrementar_fn(){
+                stop = setInterval(incrementar_fn,tiempo);
+            }
+            stop = setInterval(incrementar_fn,tiempo);
+
+            //Apartado 2
+
+            pararContador.onclick = pararCont;
+            function pararCont(){
+                clearInterval(stop);
+            }
+            //Apartado 3
+;
+            let stop_cont;
+            mostrarContador.onclick = aumentCont;
+            function aumentCont(){
+                stop_cont = setTimeout(pintarCont,1000)
+            }
+            function pintarCont(){
+                contador++;
+                alert(contador);
+            }
+            //Apartado 4
+
+            stopCont.onclick = pararContTimeout;
+            function pararContTimeout(){
+                clearTimeout(stop_cont);
+            }
+    </script>
+</body>
+</html>
+

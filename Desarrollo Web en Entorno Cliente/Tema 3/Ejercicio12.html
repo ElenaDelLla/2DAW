@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12</title>
+</head>
+<body>
+    <p id="mostrar"></p>
+
+    <script>
+
+        //Apartado 1
+            const absoluto = Math.abs(-3);
+            mostrar.innerHTML +="Valor absoluto: " + absoluto + "<br>";
+        //Apartado 2
+            const redondeo = Math.round(3.2);
+            mostrar.innerHTML += "Redondeo: " +  redondeo  + "<br>";
+        //Apartado 3
+            const redondeo2 = Math.round(3.8);
+            mostrar.innerHTML += "Redondeo: " + redondeo2 + "<br>";
+        //Apartado 4
+            const alza = Math.ceil(3.2);
+            mostrar.innerHTML +="Redondeo al alza: " +  alza + "<br>";
+        //Apartado 5
+            const alza2 = Math.ceil(3.8);    
+            mostrar.innerHTML += "Redondeo al alza: " +  alza2 + "<br>";
+        //Apartado 6
+            const baja = Math.floor(3.3);    
+            mostrar.innerHTML += "Redondeo a la baja: " +  baja + "<br>";
+        //Apartado 7
+            const baja2 = Math.floor(3.8);    
+            mostrar.innerHTML += "Redondeo a la baja: " + baja2 + "<br>";
+        //Apartado 8
+            const array = [4,5,7,10,1,0.3];
+            mostrar.innerHTML += "Lista: " + array + "<br>";
+            const min = Math.min.apply(Math, array);
+            mostrar.innerHTML += "El número mas pequeño de la lista es " + min + "<br>";
+        //Apartado 9
+            const max = Math.max.apply(Math, array);
+            mostrar.innerHTML += "El número más grande la lista es " +max + "<br>";
+        //Apartado 10
+            const base = 5;
+            const exp = 3;
+            const resul = Math.pow(base,exp);
+            mostrar.innerHTML += "5 elevado a 3 es " + resul + "<br>";
+
+        //Apartado 11
+            const aleatorio = Math.random();
+            mostrar.innerHTML += "Aleatorio entre 0 y 1 con decimales" + "<br>"
+            mostrar.innerHTML += aleatorio + "<br>"
+        //Apartado 12
+            const ale = Math.round(Math.random() * 9);
+            mostrar.innerHTML += "Aleatorio entre 0 y 9 sin decimales" + "<br>"
+            mostrar.innerHTML += ale + "<br>"
+        //Apartado 13
+            const alea = Math.round(Math.random() * 99);
+            mostrar.innerHTML += "Aleatorio entre 0 y 99 sin decimales" + "<br>"
+            mostrar.innerHTML += alea + "<br>"
+        //Apartado 14
+            const aleato = Math.round(Math.random() * 999);
+            mostrar.innerHTML += "Aleatorio entre 0 y 999" + "<br>"
+            mostrar.innerHTML += aleato + "<br>"
+        //Apartado 15
+            const aleatory = Math.round(Math.random() * 20 + 40);
+            mostrar.innerHTML += "Aleatorio entre 40 y 60" + "<br>"
+            mostrar.innerHTML += aleatory + "<br>"
+        //Apartado 16
+            const numb = 9;
+            const raiz = Math.sqrt(9);
+            mostrar.innerHTML += "La raiz cuadrada de 9 es " + raiz;
+    </script>
+</body>
+</html>

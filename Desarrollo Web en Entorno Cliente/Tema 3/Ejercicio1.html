@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+
+    <p id="padre">Padre</p>
+    
+    <button id="ve1">Abrir nueva ventana</button>
+    <button id="nombre">Nombre de la ventana</button>
+    <button id="estado">Abierta/Cerrada</button>
+    <button id="cerrar">Cerra ventana</button>
+    <button id="Sfoco">Quitar foco</button>
+    <button id="Cfoco">Poner foco</button>
+    <button id="urlVentana">URL ventana</button>
+    <button id="url">URL principal</button>
+    <button id="confirmacion">Confirmacion</button>
+    <button id="propLocation">Location</button>
+    <button id="recargar">Recargar</button>
+    <button id="propNavigator">Navigator</button>
+    <button id="propDocument">Document</button>
+    
+    <button id="java">Java</button>
+ 
+    <script>
+        //Ejercicio 1
+        //Apartado 1
+
+        let ventana = null;
+        
+        ve1.onclick = abrir_ventana;
+        function abrir_ventana(){
+            ventana = window.open("", "ventanaNueva", "height=300,width=600");
+        }
+        //Apartado 2
+        nombre.onclick = mostrar_nombre;
+            function mostrar_nombre(){
+                alert(ventana.name);
+            }
+        //Apartado 3
+            cerrar.onclick = cerrar_ventana;
+            function cerrar_ventana(){
+                ventana.close();
+            }
+        //Apartado 4
+            estado.onclick = comprobar;
+            function comprobar(){
+                alert("Está cerrada: " + ventana.closed);
+            }
+
+        //Apartado 5
+            Sfoco.onclick = quitar_foco;
+            function quitar_foco(){
+                ventana.blur();
+            }
+        //Apartado 6
+            Cfoco.onclick = poner_foco;
+            function poner_foco(){
+                ventana.focus();
+            }            
+        //Apartado 7
+            urlVentana.onclick = mostrar_URLVentana;
+            function mostrar_URLVentana(){
+                alert(ventana.window.location.href);
+            }
+        //Apartado 8
+            url.onclick = mostrar_URL;
+            function mostrar_URL(){
+                alert(window.location.href);
+            }
+        //Apartado 9
+            confirmacion.onclick = usuario_borrado;
+            function usuario_borrado(){
+            if(confirm("Si continúa el usuario va a ser borrado ¿Está de acuerdo?")){
+                alert("El usuario esta de acuerdo");
+            
+            }else{
+                alert("El usuario no esta conforme");
+            }
+        }
+        //Apartado 10
+        document.getElementById("padre").innerHTML = "";
+            propLocation.onclick = mostrar_propiedades;
+            function mostrar_propiedades(){
+                document.getElementById("padre").innerHTML ="Location: "+ window.location.href + "<br>";
+                document.getElementById("padre").innerHTML +="Protocol:" + window.location.protocol + "<br>";
+                document.getElementById("padre").innerHTML +="Hostname:" + window.location.hostname + "<br>";
+                document.getElementById("padre").innerHTML +="Pathname:" + window.location.pathname + "<br>";
+                document.getElementById("padre").innerHTML +="Seach:" + window.location.search;
+                //Otra forma:
+                for (let properties in window.location) {
+                    padre.innerHTML += "La propiedad " + properties + " vale " + window.location[properties] + "<br>";  
+                }
+            }
+        //Apartado 11
+            recargar.onclick = recargar_fun;
+            function recargar_fun(){
+                location.reload();
+            }
+        //Apartado 12
+        document.getElementById("padre").innerHTML = "";
+            propNavigator.onclick = mostrar_propiedades_nav;
+            function mostrar_propiedades_nav(){
+                document.getElementById("padre").innerHTML = "Navegaddor: " + window.navigator.appName + "<br>";
+                document.getElementById("padre").innerHTML += "Versión del navegador: " + window.navigator.appVersion + "<br>";
+                document.getElementById("padre").innerHTML += "Código: " + window.navigator.appCodeName + "<br>";
+                document.getElementById("padre").innerHTML += "Plataforma: " + window.navigator.platform + "<br>";
+                document.getElementById("padre").innerHTML += "Cookies habilitadas: " + window.navigator.cookieEnabled + "<br>"; 
+                document.getElementById("padre").innerHTML += "Plataforma: " + window.navigator.platform + "<br>";
+                document.getElementById("padre").innerHTML += "Cabecera de agente de usuario del navegador: " + window.navigator.userAgent; 
+                //Otra forma:
+                for (let properties in window.navigator) {
+                    padre.innerHTML += "La propiedad " + properties + " vale " + window.navigator[properties] + "<br>";  
+                }  
+            }
+        //Apartado 13
+        document.getElementById("padre").innerHTML = "";
+        propDocument.onclick = mostrar_propiedades_doc;
+        function mostrar_propiedades_doc(){
+            document.getElementById("padre").innerHTML = "Cookies: " + window.document.cookie + "<br>";
+            document.getElementById("padre").innerHTML += "Dominio: " + window.document.domain + "<br>";
+            document.getElementById("padre").innerHTML += "Ultima modificación: " + window.document.lastModified + "<br>";
+            document.getElementById("padre").innerHTML += "Estado listo: " + window.document.readyState + "<br>";
+            document.getElementById("padre").innerHTML += "Referente: " + window.document.referrer + "<br>";
+            document.getElementById("padre").innerHTML += "Titulo: " + window.document.title + "<br>";
+            document.getElementById("padre").innerHTML += "URL: " + window.document.URL + "<br>";
+            //Otra forma:
+            for (let properties in window.document) {
+                    padre.innerHTML += "La propiedad " + properties + " vale " + window.document[properties] + "<br>";  
+                }
+        }
+        //Apartado 14
+
+        ve1.onclick = abrir_ventana;
+        function abrir_ventana(){
+            ventana = window.open("", "ventanaNueva", "height=300,width=600");
+            ventana.moveBy(300, 0);
+        }
+        //Apartado 15
+
+        java.onclick = java_status;
+        function java_status(){
+            alert(window.navigator.javaEnabled());
+        }
+    </script>
+</body>
+</html>

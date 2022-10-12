@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+        const element = document.createElement("p");
+        const iden = document.getElementById("demo");
+        const content = document.createTextNode("Primero");
+        element.appendChild(content); //añade texto al div creado
+        document.body.insertBefore(element, iden); //añade el elemento creado y su contenido
+    </script>
+</body>
+</html>

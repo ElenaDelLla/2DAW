@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+        <button id="prio">Primera letra O</button>
+        <button id="ulto">Ultima letra o</button>
+        <button id="o3post">O desde la tercera posición</button>
+        <button id="sea">Boton search</button>
+        <button id="excluida">cadena 5-9</button>
+        <button id="final">cadena 5-6 desde el final</button>
+        <button id="sub">cadena 5-6 substring</button>
+        <button id="sustituir">Sustituir</button>
+        <button id="bd">Buenos dias</button>
+        <button id="mayus">Mayusculas</button>
+        <button id="minus">Minusculas</button>
+        <button id="separar">Array</button>
+<script>
+    
+    //Ejercicio 8
+
+        const cadena = "Hola tengo 19 años";
+        
+        //Apartado 1
+        prio.onclick = ocurrencia_O;
+        function ocurrencia_O(){
+            if(cadena.indexOf("o")!=-1){
+                alert(cadena.indexOf("o") + 1);
+            } else {
+                alert("No existe ese caracter");
+            } 
+        }
+
+        //Apartado 2
+        ulto.onclick = ult_ocurrencia_o;
+        function ult_ocurrencia_o(){
+            if(cadena.lastIndexOf("o") != -1){
+                alert(cadena.lastIndexOf("o") + 1);
+            } else {
+                alert("No existe ese caracter");
+            } 
+        }
+        //Apartado 3
+        o3post.onclick = tercera_posicion;
+        function tercera_posicion(){
+            if(cadena.indexOf("o",3) != -1){
+                alert(cadena.indexOf("o",3));
+            } else {
+                alert("No existe ese caracter");
+            } 
+        }
+        //Apartado 4
+        sea.onclick = buscarO;
+        function buscarO(){
+            if(cadena.search != -1){
+                alert(cadena.search("o") + 1);
+            } else {
+                alert("No existe ese caracter");
+            } 
+        }
+        //Apartado 5
+        //no se puede
+
+        //Apartado 6
+
+        excluida.onclick = mostrar_excluida;
+        function mostrar_excluida(){
+            alert(cadena.slice(5, 9));
+        }
+        //Apartado 7
+        final.onclick = mostrar_desde_final;
+        function mostrar_desde_final(){
+            alert(cadena.slice(-6, -5));
+        }
+        //Apartado 8
+        sub.onclick = mostrar_cadena;
+        function mostrar_cadena(){
+            alert(cadena.substring());
+        }
+        //No se puede
+
+        //Apartado 9
+        
+        sustituir.onclick = sustituir_cadena;
+        function sustituir_cadena(){
+            alert(cadena.replace("19", "diecinueve"));
+        }
+        //Apartado 10
+        bd.onclick = cambiar_saludo;
+        function cambiar_saludo(){
+            alert(cadena.replace(/hola/i,"Buenos dias"));
+        }
+        //Apartado 11
+        mayus.onclick = transformar_mayus;
+        function transformar_mayus(){
+            alert(cadena.toUpperCase());
+        }
+        //Apartado 12
+        minus.onclick = transformar_minus;
+        function transformar_minus(){
+            alert(cadena.toLowerCase());
+        }
+        //Apartado 13
+        separar.onclick = separar_palabras;
+        function separar_palabras(){
+              const array = cadena.split(" ");
+              let result = "";
+              array.forEach(palabra => {
+                result += palabra + " - ";
+              });
+              alert(result);
+        }
+        </script>
+</body>
+</html>

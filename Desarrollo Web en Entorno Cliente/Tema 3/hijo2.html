@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="modificarHijo2">Hijo2</p>
+    <button id="b7">Modificar padre</button>
+    <button id="b9">Dar foco al padre</button>
+    <script>
+        b7.onclick = modificar_hijo1;
+        function modificar_hijo1() {
+            opener.modificarPadre.innerHTML = "Hijo1 modifica a hijo2";
+        }
+        //Dar el foco al padre
+        b9.onclick = foco_padre;
+        function foco_padre(){
+            opener.focus();
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <button id="ve1">Abrir nueva ventana</button>
+    <button id="mover">Mover</button>
+    <button id="parar">Parar</button>
+    <script>
+        //Ejercicio 3
+
+        //Apartado 1
+        let stop;
+        let ventana = null;
+
+        ve1.onclick = abrir_ventana;
+        function abrir_ventana(){
+            ventana = window.open("","v1","height=300,width=600");
+        }
+        //Apartado 2
+        mover.onclick = intervalo;
+        function mover_fn(){
+            ventana.focus();
+            ventana.moveBy(40,40);
+        }
+        function intervalo(){
+            stop = setTimeout(mover_fn, 2000);
+        }
+        //Apartado 3
+        parar.onclick = pararVentana;
+        function pararVentana(){
+            clearTimeout(stop);
+            ventana.focus();
+        }
+    </script>
+    
+</body>
+</html>

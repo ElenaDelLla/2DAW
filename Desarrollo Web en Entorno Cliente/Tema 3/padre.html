@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos T3</title>
+</head>
+<body>
+    <p>Padre</p>
+    <p id="modificarPadre">Hola</p>
+    <button id="b1">Crear ventana1</button>
+    <button id="b2">Cerrar ventana1</button>
+
+    <button id="b3">Crear ventana2</button>
+    <button id="b4">Cerrar ventana2</button>
+
+    <button id="b5">Modificar hijo1</button>
+    <button id="b6">Modificar hijo2</button>
+    <button id="b7">Dar foco a hijo2</button>
+    <button id="c1">Abrir ventana</button>
+    
+    <script>
+        let ventana_hijo1 = null;
+        let ventana_hijo2 = null;
+
+        b1.onclick = crear_ventana;
+        function crear_ventana(){
+           ventana_hijo1 = window.open("hijo1.html");
+        }
+
+        b2.onclick = cerrar_ventana;
+        function cerrar_ventana(){
+            ventana_hijo1.close();
+        }
+
+        b3.onclick = crear_ventana2;
+        function crear_ventana2(){
+        ventana_hijo2= window.open("hijo2.html");
+        }
+
+        b4.onclick = cerrar_ventana2;
+        function cerrar_ventana2(){
+            ventana_hijo2.close();
+        }
+        
+        b5.onclick = modificar_hijo1;
+        function modificar_hijo1(){
+            ventana_hijo1.modificarHijo1.innerHTML = "Mensaje del padre al hijo 1";
+            
+        }
+        b6.onclick = modificar_hijo2;
+        function modificar_hijo2(){
+            ventana_hijo2.modificarHijo2.innerHTML = "Mensaje del padre al hijo 2";
+        }
+        //Dar el foco al hijo2
+        b7.onclick = dar_foco;
+        function dar_foco(){
+            ventana_hijo2.focus();
+        }
+        //Mueve desde padre a hijo1 a pixel 10,30 (move to). Estando ahí, desplaza 10 píxeles en la coordenada x
+        //x y en la y en esa ventana (move by)
+        
+        let abrir = null;
+        c1.onclick = abrir_ventana;
+        function abrir_ventana(){
+            ventana_hijo1 = window.open("hijo1.html","","width = 300 height=250");
+        }
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    <button id="expCientifica">Expresión científica</button>
+    <button id="redondeo">Redondeo</button>
+    <button id="unDecimal">Redondeo con un decimal</button>
+    <button id="unDigito">Un digito</button>
+    <button id="dosDigito">Dos digitos</button>
+    <button id="tresDigito">Tres digitos</button>
+    <button id="cuatroDigito">Cuatro digitos</button>
+    <button id="cincoDigito">Cinco digitos</button>
+    <button id="seisDigito">Seis digitos</button>
+
+    <script>
+        const num = 123.78;
+
+        //Apartado 1
+        expCientifica.onclick = expresion_cientifica;
+        function expresion_cientifica(){
+            alert(num.toExponential());
+        }
+        //Apartado 2
+        redondeo.onclick = redondear;
+        function redondear(){
+            alert(num.toFixed());
+        }
+        //Apartado 3
+        unDecimal.onclick = redondeo_con_decimal;
+        function redondeo_con_decimal(){
+            alert(num.toFixed(1));
+        }
+        //Apartado 4
+        unDigito.onclick = un_digito;
+        function un_digito(){
+            alert(num.toPrecision(1));
+        }
+        //Apartado 5
+        dosDigito.onclick = dos_digitos;
+        function dos_digitos(){
+            alert(num.toPrecision(2));
+        }
+        //Apartado 6
+        tresDigito.onclick = tres_digitos;
+        function tres_digitos(){
+            alert(num.toPrecision(3));
+        }
+        //Apartado 7
+        cuatroDigito.onclick = cuatro_digitos;
+        function cuatro_digitos(){
+            alert(num.toPrecision(4));
+        }
+        //Apartado 8
+        cincoDigito.onclick = cinco_digitos;
+        function cinco_digitos(){
+            alert(num.toPrecision(5));
+        }
+        //Apartado 9
+        seisDigito.onclick = seis_digitos;
+        function seis_digitos(){
+            alert(num.toPrecision(6));
+        }
+    </script>
+</body>
+</html>

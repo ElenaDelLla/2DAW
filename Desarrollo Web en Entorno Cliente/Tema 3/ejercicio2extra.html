@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="b1">Crear</button>
+    <button id="b2">Mover</button>
+    <button id="b3">Parar</button>
+
+    <script>
+        let parar;
+        let ventana1;
+        b1.onclick = crear;
+        function crear(){
+            ventana1 = window.open("","nueva","height=300,width=600");
+        }
+        b2.onclick = mover;
+        function mover(){
+            ventana1.focus();
+            parar = setInterval("ventana1.moveBy(5,5)",100);
+        }
+        b3.onclick = pararVentana;
+        function pararVentana(){
+            clearInterval(parar);
+            ventana1.focus();
+        }
+        
+    </script>
+    
+</body>
+</html>
