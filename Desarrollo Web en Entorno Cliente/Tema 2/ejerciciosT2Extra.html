@@ -9,38 +9,196 @@
 <body>
     <p id="T2">Ejercicios Tema 2</p>
     <script>
+        //NUMEROS
         
     //Ejercicio 4
-        /*const num = prompt("Escribe un número", 0);
-        if(num % 2 == 0 ){
+       /* const num = parseInt(prompt("Escribe un número", 0));
+        if(Number.isNaN(num)){
+            alert("El numero introducido no es un número");
+        }else if(num % 2 == 0 ){
             T2.innerHTML = "El número introducido es par";
         }else
             T2.innerHTML = "El número introducido no es par";*/
         
     //Ejercicio 5
-        /*const num = prompt("Indica un número para iniciar la cuenta atrás", 0);
+        /*const num = parseInt(prompt("Indica un número para iniciar la cuenta atrás", 0));
         let i;
         T2.innerHTML = "";
+        if(Number.isNaN(num)){
+            alert("No has introducido un número");
+        }else{
         for(i = num; i >= 0; i--){
             T2.innerHTML += i + "<br>";
-        }*/ 
+        }
+    }*/
     
     //Ejercicio 7
 
-        /*const num1 = prompt("Indica el primer número", 0);
-        const num2 = prompt("Indica el segundo número", 0);
-        const num3 = prompt("Indica el tercer número", 0);
+        /*const num1 = parseInt (prompt("Indica el primer número", 0));
+        const num2 = parseInt (prompt("Indica el segundo número", 0));
+        const num3 = parseInt (prompt("Indica el tercer número", 0));
 
         if(num2 == ""){
             T2.innerHTML = "No has introducido el segundo número";
         }else 
             T2.innerHTML = num2;*/
 
+    //Ejercicio 8
 
+        /*let num = 0;
+        let array = [];
+        let i = 0;
 
-    </script>
+        while (i < 4){
+            num = parseInt(prompt("Indica los numeros que quieres ordenar", 0));
+            if(Number.isNaN(num)){
+                alert("No has introducido un número");
+            }
+            array.push(parseInt(num));
+            array.sort();
+            i++;
+        }
+        alert(array.toString());*/
 
+    //Ejercicio 9
 
-    
+    /*let num = 0;
+    let array = [];
+    let result = 0;
+    num = prompt("Indica los numeros de los que quieres saber la media aritmetica", 0);
+    num = parseInt(num);
+        while(num > 0){
+            array.push(num);
+            num = prompt("Indica los numeros de los que quieres saber la media aritmetica", 0);
+            num = parseInt(num);
+        }
+        for(let i = 0; i <= array.length-1; i++ ){
+            result += array[i]; 
+        }
+        result = result / array.length;
+        alert(result);*/
+       
+
+    /*let num = 0;
+    let array = [];
+    let result = 0;
+    num = prompt("Indica los numeros de los que quieres saber la media armonica", 0);
+    num = parseInt(num);
+        while(num > 0){
+            array.push(num);
+            num = prompt("Indica los numeros de los que quieres saber la media aritmetica", 0);
+            num = parseInt(num);
+        }
+        for(let i = 0; i <= array.length-1; i++ ){
+            result += 1 / array[i]; 
+        }
+        result = array.length / result;
+        alert(result);*/ 
+
+        /*let num = 0;
+    let array = [];
+    let result = 0;
+    num = prompt("Indica los numeros de los que quieres saber la media cuadratica", 0);
+    num = parseInt(num);
+        while(num > 0){
+            array.push(num);
+            num = prompt("Indica los numeros de los que quieres saber la media aritmetica", 0);
+            num = parseInt(num);
+        }
+        for(let i = 0; i <= array.length-1; i++ ){
+            result += array[i]*array[i]; 
+        }
+        result = sqrt((1/array.length)*result);
+        alert(result);*/
+
+    /*let num = 0;
+    let array = [];
+    let result = 0;
+    num = prompt("Indica los numeros de los que quieres saber la media aritmetica", 0);
+    num = parseInt(num);
+        while(num > 0){
+            array.push(num);
+            num = prompt("Indica los numeros de los que quieres saber la media aritmetica", 0);
+            num = parseInt(num);
+        }
+        for(let i = 0; i <= array.length-1; i++ ){
+            result = result * array[i]; 
+        }
+        result = Math.pow(result, 1/array.length);
+        alert(result);*/
+
+    //Ejercicio 11
+        /*let estatura = parseInt(prompt("Indique su estatura", 0))/100;
+        let peso = parseInt(prompt("Indique su peso"));
+        let IMC =  peso / (estatura*estatura);
+
+        if(IMC < 18.5){
+            alert("Bajo peso");
+        }else if(IMC >= 18.5 && IMC <= 25){
+            alert("Peso normal");
+        }else if(IMC >= 25 && IMC <= 30){
+            alert("Sobrepeso");
+        }else if(IMC > 30){
+            alert("Obesidad");
+        }*/
+
+        // CADENA DE CARACTERES
+
+        //Ejercicio 4
+
+        /*let p1 = prompt("Introduce la primera palabra", 0);
+        let p2 = prompt("Introduce la segunda palabra");
+        let diferencia = 0;
+
+        if(p1.length > p2.length){
+            diferencia = p1.length - p2.length;
+            alert("La primera palabra " + p1 + " es mas larga que la segunda " + p2 + " en " + diferencia + " caracteres");
+        }else{
+            diferencia = p2.length - p1.length;
+            alert("La segunda palabra " + p2 + " es mas larga que la primera " + p1 + " en " + diferencia + " caracteres");
+        }*/
+
+        //Ejercicio 5
+       
+        /*let num_palabra = parseInt(prompt("Indica el número de palabras que quieres comparar", 0));
+        let array = [];
+        while(num_palabra > 0){
+            let palabra = prompt("Indica la palabra", 0);
+            array.push(palabra);
+            num_palabra --;
+        }
+        let corta = array[0];
+        let larga = array[0];
+        for (let i = 0; i <= array.length-1; i++) {
+            if(array[i].length < corta.length){
+                corta = array[i];
+            }
+
+            if(array[i].length > larga.length){
+                larga = array[i];
+            }
+        }
+        alert("La palabra mas larga es " + larga + " y la palabra mas corta es " + corta);*/ 
+
+        //Ejercicio 10
+
+        let numero = parseInt(prompt("Introduce un número", 0));
+        let i = 1;
+        let res = "";
+        while(i<=numero){
+            let j=1;
+            let linea= "";
+            while(j<=i){
+                linea+=j;
+                j++;
+            }
+            while(linea.length<numero){
+                linea+="*";
+            }
+            res+=linea+"</br>";
+            i++;
+        }
+        T2.innerHTML = res;
+    </script> 
 </body>
 </html>
