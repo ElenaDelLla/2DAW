@@ -1,0 +1,52 @@
+.results{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    border: 5px dotted goldenrod;
+    margin-top: 10px;
+    padding: 10px;
+}
+h3{
+    text-align: center;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+body {
+    font: normal 1em "Fira Sans", "Helvetica Neue", sans-serif;
+    background: whitesmoke;
+    color: black;
+    height: 100vh;
+}
+.flex-page {
+    flex-flow: column nowrap;
+}
+.oculto {
+    visibility: hidden;
+    position: absolute;
+}
+.border {
+    border: 10px solid goldenrod;
+}
+.submit {
+    height: 30px ;
+    background: orange;
+}
+.submit-section {
+    display:flex;
+    justify-content: flex-end;
+    flex: auto;
+}
+.form-section {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+input{
+    margin-left: 20px;
+}
+.fondo{
+    background-color: grey;
+}
