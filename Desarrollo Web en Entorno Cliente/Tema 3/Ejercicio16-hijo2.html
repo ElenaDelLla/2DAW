@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16-hijo2</title>
+</head>
+<body>
+    <input type="text" id="textoHijo2">
+    <button id="mandarPadre">Mandar a padre</button>
+    <button id="mandarHermano1">Mandar a hermano</button>
+
+    <script>
+          mandarPadre.onclick = enviar_padre;
+        function enviar_padre(){
+            window.opener.textoPadre.value = textoHijo2.value;
+        }
+        mandarHermano1.onclick = enviar_Hermano1;
+        function enviar_Hermano1(){
+            window.opener.enviarTextoAHermano1(textoHijo2.value);
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body id="cuerpo">
+    <script>
+        const fechaActual = new Date();
+        cuerpo.innerHTML = "La fecha: " + fechaActual.getDate() + "<br>";
+        cuerpo.innerHTML += "Fecha y hora segun estándar ISO: " + fechaActual.toISOString() + "<br>";
+        cuerpo.innerHTML += "Fecha y hora Greenwich: " + fechaActual.toUTCString() + "<br>";
+        cuerpo.innerHTML += "El tiempo en milisegundos desde el 1 de Enero de 1971: " + fechaActual.setHours(fechaActual.getHours()) + "<br>";
+        cuerpo.innerHTML += "Año completo: " + fechaActual.getFullYear() + "<br>";
+        cuerpo.innerHTML += "Mes: " + fechaActual.getMonth() + "<br>";
+        cuerpo.innerHTML += "Día del mes: " + fechaActual.getDate() + "<br>";
+        cuerpo.innerHTML += "Día de la semana: " + fechaActual.getDay() + "<br>";
+        cuerpo.innerHTML += "Hora: " + fechaActual.getHours() + "<br>";
+        cuerpo.innerHTML += "Minutos: " + fechaActual.getMinutes() + "<br>";
+        cuerpo.innerHTML += "Segundos: " + fechaActual.getSeconds() + "<br>";
+
+    </script>
+
+</body>
+</html>

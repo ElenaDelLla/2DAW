@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16-Padre</title>
+</head>
+<body>
+    <input type="text" id="textoPadre">
+    <button id="crearV1">Crear ventana 1</button>
+    <button id="cerrarV1">Cerrar ventana 1</button>
+    <button id="crearV2">Crear ventana 2</button>
+    <button id="cerrarV2">Cerrar ventana 2</button>
+    <button id="mandarV1">Mandar a hijo 1</button>
+    <button id="mandarV2">Mandar a hijo 2</button>
+    <script>
+
+        let hijo1;
+
+        crearV1.onclick = crear_hijo1;
+        function crear_hijo1(){
+            hijo1 = window.open("Ejercicio16-hijo1.html","Hijo1");
+        }
+        cerrarV1.onclick = cerrar_hijo1;
+        function cerrar_hijo1(){
+            hijo1.close();
+        }
+
+        crearV2.onclick = crear_hijo2;
+        function crear_hijo2(){
+            hijo2 = window.open("Ejercicio16-hijo2.html","Hijo2");
+        }
+        cerrarV2.onclick = cerrar_hijo2;
+        function cerrar_hijo2(){
+            hijo2.close();
+        }
+
+        mandarV1.onclick = enviar_hijo1;
+        function enviar_hijo1(){
+            hijo1.textoHijo1.value=textoPadre.value;
+        }
+        mandarV2.onclick = enviar_hijo2;
+        function enviar_hijo2(){
+            hijo2.textoHijo2.value=textoPadre.value;
+        }
+
+        function enviarTextoAHermano1(value){
+            hijo1.textoHijo1.value = value;
+        }
+        function enviarTextoAHermano2(value){
+            hijo2.textoHijo2.value = value;
+        }
+
+    </script>
+</body>
+</html>
