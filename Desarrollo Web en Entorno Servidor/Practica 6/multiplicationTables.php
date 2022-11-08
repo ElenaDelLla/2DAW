@@ -3,7 +3,7 @@ if (empty($_POST)) {
     header("Location: index.php");
 }
 
-$numbersString = filter_input(INPUT_POST, "numbers", FILTER_SANITIZE_STRING); //¿Hay que poner un filter_sanitize?
+$numbersString = filter_input(INPUT_POST, "numbers", FILTER_SANITIZE_STRING);
 $validString = false;
 //3 o 1-9 o 1,3,5,7-9.
 if ($numbersString && preg_match("/^([0-9](-[0-9])?)((,[0-9](-[0-9])?)?)+$/", $numbersString)) {
