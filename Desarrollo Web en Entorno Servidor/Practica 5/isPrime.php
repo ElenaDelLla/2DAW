@@ -3,7 +3,7 @@ if(empty($_POST)){
     header("Location: index.php");
 }
 
-$numero = filter_input(INPUT_POST, "num", FILTER_SANITIZE_NUMBER_INT);
+$numero = filter_input(INPUT_POST, "num", FILTER_VALIDATE_INT);
 $primo = true;
 $texto = "";
 $action = filter_input(INPUT_POST, "resetbutton");
