@@ -15,7 +15,7 @@ if(empty($_POST)){
         $nombreOk = false;
         $valido = false;
         }
-        if(preg_match("/[^A-Za-z ]/", $nombre)){
+        if(preg_match("/^(?=.*[a-z])(?=.*[A-Z]) (?=.*\s)[a-zA-Z\s]{3,25}$/", $nombre)){
             $nombreOk = false;
             $valido = false;
         }
