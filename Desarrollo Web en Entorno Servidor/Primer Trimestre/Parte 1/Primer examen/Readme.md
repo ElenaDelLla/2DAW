@@ -8,6 +8,7 @@ mayúsculas y minúsculas en cualquier posición de las palabras.
 La lista de palíndromos aparecerá ordenada de mayor a menor número de letras. Si no se
 detectan palíndromos se mostrará la cadena “No hay palíndromos”.
 Se valorarán los siguientes aspectos de la solución:
+
     • Uso de las estructuras de control adecuado.
     • El uso de funciones de librería PHP de la forma más extensiva posible.
     • Uso de funciones de usuario en el contexto adecuado.
