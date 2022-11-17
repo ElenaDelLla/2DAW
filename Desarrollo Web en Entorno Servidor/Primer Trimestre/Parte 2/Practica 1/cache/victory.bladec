@@ -1,0 +1,7 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('title', 'Guess a number'); ?>
+<?php $this->startSection('h1Text', '¡HAS GANADO! ¡Enhorabuena!'); ?>
+<?php $this->startSection('content'); ?>
+<?php echo $this->runChild('new'); ?>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('app'); } ?>

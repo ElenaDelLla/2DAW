@@ -1,0 +1,17 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('title', 'Guess a number'); ?>
+<?php $this->startSection('h1Text', '¡Nuevo intento!'); ?>
+<?php $this->startSection('content'); ?>
+<h2><?php echo \htmlentities($resultado??'', ENT_QUOTES, 'UTF-8', false); ?></h2>
+<h3>Numero de intentos restantes: <?php echo \htmlentities($_SESSION["contador"]??'', ENT_QUOTES, 'UTF-8', false); ?> </h3>
+<form class="border" name="aleatory_number" action="index.php" method="POST">
+ <div class="form-section">
+ <label>Introduce el número: </label>
+ <input id="numb" type="number" name="numeroIntroducido" placeholder="Introduce el número con el que quieres jugar"/>
+ </div>
+ <div class="submit-section">
+ <input class="submit" type="submit" value="Send" name="sendbutton" /> 
+ </div>
+</form>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('app'); } ?>

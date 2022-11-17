@@ -1,0 +1,17 @@
+{
+    "name": "elena/guess-a-number-sessions-elena-del-lla",
+    "type": "project",
+    "require": {
+        "eftec/bladeonehtml": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elena\\GuessANumberSessionsElenaDelLla\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Elena Delgado Llamas"
+        }
+    ]
+}

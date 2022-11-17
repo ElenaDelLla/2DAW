@@ -1,0 +1,5 @@
+<form name="aleatory_number" action="index.php" method="POST">
+ <div class="submit-section">
+ <input class="submit" type="submit" value="Nuevo juego" name="reset" /> 
+ </div>
+</form>
