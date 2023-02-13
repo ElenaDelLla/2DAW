@@ -1,0 +1,40 @@
+.error{
+    color:red;
+}
+
+.listaCategorias{
+    display:flex;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.contenido{
+    padding: 2rem;
+    border: 1px solid grey;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.resultado{
+    color: red;
+    font-weight: bold;
+}
+
+.nombre,
+.precio{
+    display: inline-block
+}
+.nombre span,
+.precio span{
+    font-weight: bold;
+}
+
+.seccion-formulario{
+    margin-top: 1rem;
+}
+
+.listaCategorias > *{
+    margin-right: 5px;
+}

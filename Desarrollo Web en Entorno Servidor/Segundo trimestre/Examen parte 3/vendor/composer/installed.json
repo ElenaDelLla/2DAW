@@ -1,0 +1,173 @@
+{
+    "packages": [
+        {
+            "name": "eftec/bladeone",
+            "version": "4.8",
+            "version_normalized": "4.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/BladeOne.git",
+                "reference": "26b79fc337a7c584c7d222dc1dbc6d34771d0394"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/BladeOne/zipball/26b79fc337a7c584c7d222dc1dbc6d34771d0394",
+                "reference": "26b79fc337a7c584c7d222dc1dbc6d34771d0394",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.23"
+            },
+            "suggest": {
+                "eftec/bladeonehtml": "Extension to create forms",
+                "ext-mbstring": "This extension is used if it's active"
+            },
+            "time": "2023-01-12T01:22:51+00:00",
+            "bin": [
+                "lib/bladeonecli"
+            ],
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\bladeone\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Patricio Castro Castillo",
+                    "email": "jcastro@eftec.cl"
+                }
+            ],
+            "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+            "homepage": "https://github.com/EFTEC/BladeOne",
+            "keywords": [
+                "blade",
+                "php",
+                "template",
+                "templating",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/EFTEC/BladeOne/issues",
+                "source": "https://github.com/EFTEC/BladeOne/tree/4.8"
+            },
+            "install-path": "../eftec/bladeone"
+        },
+        {
+            "name": "eftec/bladeonehtml",
+            "version": "2.3.2",
+            "version_normalized": "2.3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/BladeOneHtml.git",
+                "reference": "8f2e00afe0e794e4c7fe12d8e27869eb594ea9ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/BladeOneHtml/zipball/8f2e00afe0e794e4c7fe12d8e27869eb594ea9ff",
+                "reference": "8f2e00afe0e794e4c7fe12d8e27869eb594ea9ff",
+                "shasum": ""
+            },
+            "require": {
+                "eftec/bladeone": "^4.8",
+                "eftec/messagecontainer": "^2.8",
+                "ext-json": "*",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.11"
+            },
+            "time": "2023-01-31T19:58:22+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\bladeonehtml\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Patricio Castro Castillo",
+                    "email": "jcastro@eftec.cl"
+                }
+            ],
+            "description": "The standalone version Blade Template Engine from Laravel in a single php file",
+            "homepage": "https://github.com/EFTEC/BladeOneHtml",
+            "keywords": [
+                "blade",
+                "php",
+                "template",
+                "templating",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/EFTEC/BladeOneHtml/issues",
+                "source": "https://github.com/EFTEC/BladeOneHtml/tree/2.3.2"
+            },
+            "install-path": "../eftec/bladeonehtml"
+        },
+        {
+            "name": "eftec/messagecontainer",
+            "version": "2.8",
+            "version_normalized": "2.8.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EFTEC/MessageContainer.git",
+                "reference": "f745542a6575c92026d8a597eb0ac058fbf6f8c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EFTEC/MessageContainer/zipball/f745542a6575c92026d8a597eb0ac058fbf6f8c0",
+                "reference": "f745542a6575c92026d8a597eb0ac058fbf6f8c0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "php": ">=7.2.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "time": "2023-01-29T01:02:22+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "eftec\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jorge Castro",
+                    "email": "jcastro@eftec.cl"
+                }
+            ],
+            "description": "MessageContainer is a simple a minimalist message-system where messages (strings) could be stored in a tree-like structure",
+            "homepage": "https://github.com/EFTEC/MessageContainer",
+            "support": {
+                "issues": "https://github.com/EFTEC/MessageContainer/issues",
+                "source": "https://github.com/EFTEC/MessageContainer/tree/2.8"
+            },
+            "install-path": "../eftec/messagecontainer"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}
