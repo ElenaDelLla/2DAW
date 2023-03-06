@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Primera línea</p>
+        <p>Segunda línea</p>
+        <p>Tercera línea</p>
+    </div>
+    <script>
+        var elemDiv=document.getElementsByTagName(“div”)[0]
+        elemDiv.children[0]// es el párrafo cuyo contenido es “Primera línea”
+        elemDiv.children[1]// es el párrafo cuyo contenido es “Segunda línea”
+        elemDiv.children[elemDiv.childElementCount-1]// es “Tercera línea”
+    </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicio2</title>
+  </head>
+  <body>
+    <div id="div1">
+      "Si pasas por encima de este texto con el ratón se creará una tabla de 10
+      filas y de 5 columnas"
+    </div>
+
+    <script>
+      div1.addEventListener("mouseover", crear); //llamamos a la función para crear la tabla
+
+      div1.addEventListener("mouseover", parar); //llamamos a la función para que no se creé más de una tabla
+
+      function crear() {
+        //elemento caption con el texto correspondiente.
+
+        var titulo = document.createElement("h1");
+        var textoh1 = document.createTextNode(
+          "Encabezado H1 creado dinamicamente"
+        );
+        titulo.appendChild(textoh1);
+
+        var caption = document.createElement("caption");
+        var textoCaption = document.createTextNode(
+          "Tabla creada dinamicamente y texto sobre elemento caption"
+        );
+        caption.appendChild(textoCaption);
+
+        for (var z = 0; z < 5; z++) {
+          var cabecera = document.createElement("td"); //PREGUNTAR COMO SE HARIA
+          var textoCabecera = document.createTextNode("Columna");
+          cabecera.append(textoCabecera);
+        }
+
+        var tabla = document.createElement("table");
+
+        for (var i = 0; i < 5; i++) {
+          var fila = document.createElement("tr");
+          for (var j = 0; j < 5; j++) {
+            var celda = document.createElement("td");
+            var texto = document.createTextNode("Datos" + i + j);
+            celda.append(texto);
+
+            fila.appendChild(celda);
+          }
+          tabla.appendChild(fila);
+        }
+
+        tabla.setAttribute("border", "1px");
+        fila.setAttribute("width", "15px");
+        celda.setAttribute("width", "15px");
+
+        document.getElementById("div1").appendChild(titulo);
+        document.getElementById("div1").appendChild(caption);
+        document.getElementById("div1").appendChild(cabecera);
+        document.getElementById("div1").appendChild(tabla);
+      }
+
+      function parar() {
+        //Con esta función hacemos que la tabla se creé una vez unicamente, ya que con removeEventListener anulamos el evento que se indica.
+        div1.removeEventListener("mouseover", crear);
+      }
+    </script>
+  </body>
+</html>

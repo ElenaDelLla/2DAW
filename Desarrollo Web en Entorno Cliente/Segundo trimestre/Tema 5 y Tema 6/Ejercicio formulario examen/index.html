@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 1 - Examen práctico UT5-6 </title>
+<style type="text/css">
+label{
+	width: 250px;
+	float:left;
+	margin-bottom:5px;
+}
+input,select {
+	width:550px;
+	float:left;
+	margin-bottom:5px;
+}
+
+fieldset{
+	background:#66CCCC;
+	width:850px;
+	border: thick solid #306;
+}
+
+legend{
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	background-color: #FFF;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+<fieldset>
+<legend>Ejercicio 1 de Examen UT5-6</legend>
+<form name="formulario" id="formulario" action="http://www.google.es" method="get">
+  <label for="nombre">Nombre y Apellidos:</label>
+  <input type="text" name="nombre" id="nombre"><br>
+  <label for="nif">NIF:</label>
+  <input name="nif" type="text" id="nif" placeholder="8 digitos y separador opcional (espacio en blanco o guión) y letra mayúscula" ><br>
+  <label for="telefono">Teléfono:</label>
+  <input name="telefono" type="text" id="telefono" placeholder="9 números, empezando por 6 ó 9" size="50"><br>
+  <label for="contras">Contraseña:</label>
+  <input type="password" name="contras" id="contras" placeholder="Debe contener una letra mayúscula, un número y 8 caracteres" ><br>
+  <label for="contras2">Confirmación contraseña:</label>
+  <input type="password" name="contras2" id="contras2" placeholder="Igual a la anterior"><br>
+  <input type="button" id="ver" value="Ver">
+  <input type="button" name="limpiar" id="limpiar" value="Limpiar" >
+  <input type="submit" name="enviar" id="enviar" value="Enviar" ><br>
+</form>
+
+</fieldset>
+<div id="errores"></div>
+<script src="ej1.js"></script>
+</body>
+</html>

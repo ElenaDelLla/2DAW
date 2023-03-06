@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <label>Dato 1</label>
+    <input id="texto" type="text">
+    <button id="guardar" type="button" name="button">Guardar dato 1</button>
+    <button id="mostrar1" type="button" name="button">Mostrar último dato1 guardado</button>
+    <button id="mostrar2" type="button" name="button">Mostrar penúltimo dato1 guardado</button>
+    <button id="borrar" type="button" name="button">Borrar cookies</button>
+    <p id="demo"></p>
+    <p id="resultados"></p>
+
+    <script>
+
+      document.getElementById("guardar").addEventListener("click", guardarDato);
+      document.getElementById("mostrar1").addEventListener("click", mostrar1);
+      document.getElementById("mostrar2").addEventListener("click", mostrar2);
+      document.getElementById("borrar").addEventListener("click", borrar);
+
+      function guardarDato(){
+
+        const fecha = new Date();
+        fecha.setSeconds(fecha.getSeconds()+300);
+
+          var dato1 = texto.value;
+          var valor = obtenerValorCookie("ultimodato1");
+
+          valor = dato1;
+          document.cookie = "ultimodato1="+valor+"; expires="+fecha.toUTCString();
+          document.cookie = "penultimodato1="+valor+"; expires="+fecha.toUTCString();
+
+          demo.innerHTML = document.cookie;
+      }
+
+      function mostrar1(){
+        incrementarCookie("contador");
+        let valorCookie = obtenerValorCookie("ultimodato1");
+        if(valorCookie == false){
+          resultados.innerHTML = "No hay ningún valor guardado";
+        }
+        resultados.innerHTML = "El valor de la cookie ultimodato1 es: "+valorCookie;
+      }
+
+      function mostrar2(){
+        incrementarCookie("contador");
+        let valorCookie = obtenerValorCookie("penultimodato1");
+        if(valorCookie == false){
+          resultados.innerHTML = "No hay ningún valor guardado";
+        }
+        resultados.innerHTML = "El valor de la cookie penultimodato1 es: "+valorCookie;
+      }
+
+      function borrar(){
+        if(document.cookie != ""){
+          document.cookie= "contador=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+          document.cookie= "ultimodato1=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+          document.cookie= "penultimodato1=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+          demo.innerHTML = "Se han borrado todas las cookies";
+          resultados.innerHTML = "";
+        } else {
+          demo.innerHTML = "No hay cookies en este momento";
+        }
+      }
+
+
+      function obtenerValorCookie(nombreCookie){
+        if(document.cookie != ""){
+          var arrayCookie = document.cookie.split(";");
+
+          for (var i = 0; i < arrayCookie.length; i++) {
+            let cookieKeyValue = arrayCookie[i].split("=");
+
+            let cookieKey = cookieKeyValue[0].trim();
+            let cookieValue = cookieKeyValue[1].trim();
+
+            if(cookieKey == nombreCookie){
+              return cookieValue;
+            }
+          }
+        }
+        return false;
+      }
+
+      function incrementarCookie(nombreCookie, sufijoCookie=""){
+        let cookieValue = obtenerValorCookie(nombreCookie);
+
+        if(cookieValue === false){
+          cookieValue = 1;
+        } else {
+          cookieValue = parseInt(cookieValue) +1;
+        }
+
+        document.cookie = nombreCookie+"="+cookieValue+sufijoCookie;
+        demo.innerHTML = document.cookie;
+      }
+
+    </script>
+
+  </body>
+</html>

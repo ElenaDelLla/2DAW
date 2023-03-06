@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ejercicio</title>
+    <style type="text/css">
+      label {
+        width: 250px;
+        float: left;
+        margin-bottom: 5px;
+      }
+      input {
+        width: 550px;
+        float: left;
+        margin-bottom: 5px;
+      }
+
+      fieldset {
+        background: #66cccc;
+        width: 850px;
+        border: thick solid #306;
+      }
+
+      legend {
+        border-top-width: medium;
+        border-right-width: medium;
+        border-bottom-width: medium;
+        border-left-width: medium;
+        border-top-style: solid;
+        border-right-style: solid;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Ejercicio</legend>
+      <form
+        name="formulario"
+        id="formulario"
+        action="http://www.google.es"
+        method="get"
+      >
+        <label for="telefono">Telefono:</label>
+        <input
+          type="text"
+          name="telefono"
+          id="telefono"
+          placeholder="Debe comenzar por 6 ó 9"
+        /><br />
+        <label for="contras">Contraseña:</label>
+        <input
+          type="password"
+          name="contras"
+          id="contras"
+          placeholder="Debe contener al menos 8 caracteres (del alfabeto básico, numeros, guiones bajos)"
+        /><br />
+
+        <input type="submit" name="enviar" id="enviar" value="Enviar" /><br />
+
+        <input
+          type="button"
+          name="ultimos"
+          id="ultimos"
+          value="Ultimos"
+        /><br />
+      </form>
+    </fieldset>
+    <div id="errores"></div>
+    <div id="info"></div>
+    <script src="ej2.js"></script>
+  </body>
+</html>

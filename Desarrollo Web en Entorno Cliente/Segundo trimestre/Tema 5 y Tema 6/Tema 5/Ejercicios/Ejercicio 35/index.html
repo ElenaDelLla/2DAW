@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <meta name="author" content="Elena Delgado" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <style>
+        div,
+        p {
+          border: 1px solid red;
+          height: 80px;
+        }
+      </style>
+  </head>
+  <body id="cuerpo">
+    <b>Para ver cómo funciona offset</b> mueve el ratón dentro de las cajas,
+    veras que las coordenadas varian con respecto a client y page, por ejemplo
+    la coordenada Y es respecto al comienzo del elemento, y sin embargo las
+    coordenadas client y page es respecto al documento<br /><br />
+
+    <b>Para ver la diferencia entre client y page:</b> Haz más pequeña la
+    ventana de forma que la ventana no abarque todo el documento (y que aparece
+    el scroll), verás que las coordinadas de client son referentes a la parte
+    del documento que se ve, y las de page respecto al documento completo aunque
+    parte de éste no se vea. Amplia la ventana hasta que no aparezca el scroll y
+    verás que las coordenadas client y page coinciden.<br /><br />
+    <b>Observa la diferencia de las coordenadas de screen</b> que son diferentes
+    a todas las demás, ya que hacen referencia a la pantalla completa de tu
+    ordenador<br /><br />
+    <p id="prueba">
+      Prueba<br />
+      Prueba<br />
+      Prueba<br />
+    </p>
+    <div id="coordenadas"></div>
+    <p id="prueba2">
+      Prueba2<br />
+      Prueba2<br />
+      Prueba2<br />
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
