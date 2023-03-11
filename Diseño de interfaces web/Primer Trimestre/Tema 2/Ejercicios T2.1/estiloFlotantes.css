@@ -1,0 +1,28 @@
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.green{
+    border: solid 7px olive;
+    width: 3%;
+    padding: 3%;
+    float: right;
+}
+.red{
+    border: solid 7px red;
+    padding: 5%;
+}
+.blue{
+    border: solid 7px blue;
+    padding: 5%;
+    clear: both;
+}
+.verde{
+    border: solid 7px olive;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    float: right;
+}

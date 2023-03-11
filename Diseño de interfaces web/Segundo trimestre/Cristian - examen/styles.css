@@ -1,0 +1,61 @@
+div {
+  font-weight: bold;
+}
+.rojo {
+  background-color: red;
+  height: 50px;
+}
+.marron {
+  background-color: goldenrod;
+  height: 50px;
+}
+
+.naranja {
+  background-color: orange;
+  height: 100px;
+}
+
+.amarillo {
+  background-color: yellow;
+  height: 100px;
+}
+
+.verde {
+  height: 150px;
+
+  background-color: green;
+}
+
+.azul {
+  height: 50px;
+  background-color: blue;
+}
+
+.white {
+  height: 100px;
+  background-color: white;
+  outline: 2px solid black;
+}
+.pink {
+  height: 100px;
+  background-color: pink;
+}
+
+/*
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+*/
+
+@media (max-width: 575px) {
+  .verde {
+    background-color: grey;
+  }
+}
+@media (min-width: 575px) and (max-width: 992px) {
+  .white {
+    background-color: black;
+    color: white;
+  }
+}

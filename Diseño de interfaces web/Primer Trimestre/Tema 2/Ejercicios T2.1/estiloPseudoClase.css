@@ -1,0 +1,7 @@
+div{
+    margin: 5px;
+}
+.cambio :hover{
+    color: brown;
+    background-color: blanchedalmond;
+}

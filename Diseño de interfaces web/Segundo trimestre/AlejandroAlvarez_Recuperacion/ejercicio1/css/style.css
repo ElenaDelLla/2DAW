@@ -1,0 +1,54 @@
+.box-shadow-menu {
+  position: relative;
+  padding-left: 3.25em;
+  font-size:1.5em;
+  padding-bottom:1em;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 2em;
+  height: 0.3em;
+  background: black;
+  box-shadow:
+    0 0.65em 0 0 black,
+    0 1.3em 0 0 black;
+}
+
+.todo{
+  display: flex;
+}
+
+.opcion1{
+  margin-top:40px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+  width: 500px;
+}
+.opcion2{
+  margin-top:10px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+
+  width: 500px;
+}
+.opcion3{
+  margin-top:40px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+
+  width: 500px;
+}
+.opcion4{
+  margin-top:10px;
+  margin-right: 20px;
+  background-color: black;
+  color: white;
+
+  width: 500px;
+}

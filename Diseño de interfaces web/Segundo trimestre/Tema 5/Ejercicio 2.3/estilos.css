@@ -1,0 +1,31 @@
+.verde {
+    padding: 1rem;
+    background-color: greenyellow;
+}
+.rojo {
+    padding: 1rem;
+    background-color: red;
+}
+.rojoP{
+    padding: 1rem;
+    background-color: red;
+}
+.lila{
+    padding: 1rem;
+    background-color: purple;
+}
+.naranja{
+    padding: 3rem;
+    background-color: rgb(253, 198, 97);
+}
+.azul{
+    padding: 1rem;
+    background-color: blue;
+}
+.verdeF{
+    padding: 0.5rem;
+    background-color: greenyellow;
+}
+div{
+    outline: 5px solid black;
+}

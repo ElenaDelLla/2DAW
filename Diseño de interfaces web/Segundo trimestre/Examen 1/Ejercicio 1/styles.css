@@ -1,0 +1,9 @@
+.mensaje{
+    border: 2px solid black;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+.boton{
+    width: 100px;
+}

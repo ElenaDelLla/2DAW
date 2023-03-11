@@ -1,0 +1,8 @@
+IVÁN GUZMÁN ARRIBAS
+
+Añado la imagen en el Aside que se nos pide, cuando la página se haga
+de tamaño grande, la imagen ampliará su tamaño para la mejor visión y
+cuando la página se haga más pequeña esta misma reducirá su tamaño.
+También se incluye un texto alternativo que aporta información en caso de que
+la imagen no se vea.
+Con estas modificaciones creo que aplique alguno de los principios WCAG 1.1.1 en la adaptación de la imagen.

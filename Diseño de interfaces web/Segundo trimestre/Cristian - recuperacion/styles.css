@@ -1,0 +1,68 @@
+div {
+  font-weight: bold;
+}
+.rojo {
+  background-color: red;
+  height: 50px;
+}
+
+.naranja {
+  background-color: orange;
+  height: 50px;
+}
+
+.amarillo {
+  background-color: yellow;
+  height: 50px;
+}
+
+.verde {
+  height: 50px;
+  background-color: green;
+}
+
+.celeste {
+  background-color: aqua;
+  height: 50px;
+}
+.azul {
+  height: 200px;
+  background-color: blue;
+}
+
+.purple {
+  height: 200px;
+  background-color: purple;
+}
+
+/*
+xs (for phones - screens less than 768px wide)
+sm (for tablets - screens equal to or greater than 768px wide)
+md (for small laptops - screens equal to or greater than 992px wide)
+lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+*/
+
+@media (max-width: 575px) {
+  .buscador {
+    background-color: grey;
+  }
+}
+@media (min-width: 575px) {
+  .celeste {
+    background-color: green;
+  }
+  .footer2{
+    background-color: yellow;
+  }
+}
+@media (min-width: 992px) {
+  .nav2 {
+    background-color: green;
+  }
+  .footer1{
+    background-color: orange;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 992px) {
+}

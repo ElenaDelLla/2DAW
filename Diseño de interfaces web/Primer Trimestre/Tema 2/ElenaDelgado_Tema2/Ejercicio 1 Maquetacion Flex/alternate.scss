@@ -1,0 +1,43 @@
+body {
+  width: 60em;
+  margin: 0 auto;
+  .contenedor {
+    display: flex;
+    section {
+      padding: 2em;
+      margin: 1em;
+      &#green {
+        background-color: #baffc9;
+        margin-right: 20px;
+      }
+      &#orange {
+        background-color: #ffdfba;
+        flex: 2;
+        margin-right: 20px;
+      }
+      &#yellow {
+        background-color: #ffffba;
+        order: -1;
+        margin-right: 20px;
+      }
+      &#red {
+        background-color: #ffb3ba;
+        order: -1;
+        margin-right: 20px;
+      }
+      &#blue {
+        background-color: #bae1ff;
+        
+      }
+      ul {
+        padding: 0;
+        li {
+          background-color: white;
+          padding: 1em;
+          display: block;
+          margin: 1em;
+        }
+      }
+    }
+  }
+}

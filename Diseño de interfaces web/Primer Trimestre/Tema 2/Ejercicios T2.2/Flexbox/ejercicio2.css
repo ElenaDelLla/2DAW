@@ -1,0 +1,38 @@
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    padding: 30px;
+    background-color: #80CBC4;;
+}
+.contenedorContenido{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: #FFAB00;
+    height: 500px;
+    flex-grow: 1;
+    padding: 30px;
+}
+article{
+    background-color: #ffd54f;
+    flex-grow: 4;
+    padding: 30px;
+}
+aside{
+    background-color: #FFF176;
+    flex-grow: 3;
+    padding: 30px;
+}
+footer{
+    padding: 30px;
+    background-color: #26A69A;
+}
+@media screen and (max-width: 500px) {
+    .contenedorContenido{
+        display: flex;
+        flex-direction: column;
+    }
+}

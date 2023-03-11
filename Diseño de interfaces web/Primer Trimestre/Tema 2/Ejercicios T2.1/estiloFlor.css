@@ -1,0 +1,6 @@
+[title~="flor"] {
+    border: solid 10px orange;
+}
+[title*="flor"] {
+    border: solid 10px orange;
+}

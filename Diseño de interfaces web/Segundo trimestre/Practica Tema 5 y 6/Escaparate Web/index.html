@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VHE-Sharing</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row g-0">
+          <a href="index.html">
+            <img
+              class="col-4 col-sm-3 col-md-2 col-lg-1"
+              src="./imgs/logo.png"
+              alt="Logo VHE-Sharing"
+            />
+          </a>
+          <h1
+            class="col-8 col-sm-9 col-md-10 col-lg-11 d-flex align-items-center"
+          >
+            VHE-Sharing
+          </h1>
+        </div>
+      </div>
+      <div class="contenedorNavYBotones">
+        <div class="container">
+          <div class="row g-0">
+            <nav class="col-12 col-lg-6 col-xl-5 d-none d-sm-block">
+              <ul class="row g-0 h-100">
+                <li
+                  class="col-sm-3 d-flex align-items-center justify-content-center"
+                >
+                  <a href="index.html">Inicio</a>
+                  <div class="line"></div>
+                </li>
+                <li
+                  class="col-sm-3 d-flex align-items-center justify-content-center"
+                >
+                  <a href="/detalleProducto.html">Productos</a>
+                  <div class="line"></div>
+                </li>
+                <li
+                  class="col-sm-3 d-flex align-items-center justify-content-center"
+                >
+                  <a href="index.html">Compañía</a>
+                  <div class="line"></div>
+                </li>
+                <li
+                  class="col-sm-3 d-flex align-items-center justify-content-center"
+                >
+                  <a href="index.html">Blog</a>
+                  <div class="line"></div>
+                </li>
+              </ul>
+            </nav>
+            <nav
+              class="navbar navbar-light light-blue lighten-4 d-block d-sm-none"
+            >
+              <button
+                class="navbar-toggler toggler-example"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse"
+                id="navbarSupportedContent1"
+              >
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/detalleProducto.html"
+                      >Productos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Compañía</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="col-lg-2 col-xl-3"></div>
+            <div class="col-12 col-lg-4 col-xl-4">
+              <div class="row g-0 mt-3 mt-lg-0">
+                <div class="col-6">
+                  <form class="input-group" action="">
+                    <button class="btn btn-secondary" type="button">
+                      <i class="bi bi-search"></i>
+                    </button>
+                    <input
+                      class="busqueda form-control"
+                      type="text"
+                      name="search"
+                      placeholder="Búsqueda"
+                    />
+                  </form>
+                </div>
+                <button class="col-3 btn btn-secondary">Registro</button>
+                <button class="col-3 btn btn-secondary">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row contenidoCentro">
+        <aside class="col-12 col-lg-2 order-2 order-lg-1">
+          <h3>Aviso</h3>
+          <p>
+            Debido a la alta demanda, es posible que ciertos vehículos no se
+            encuentren disponibles
+          </p>
+          <h3>Calendario</h3>
+          <img src="./imgs/calendario.png" alt="Calendario" />
+
+          <h3>El tiempo mundial</h3>
+          <video controls poster="./video/poster.JPG">
+            <source
+              src="./video/TemperaturaYprecepitacionSigloXXI.ogv"
+              type="video/ogg"
+            />
+            <source
+              src="./video/TemperaturaYprecepitacionSigloXXI.mp4"
+              type="video/mp4"
+            />
+            <source
+              src="./video/TemperaturaYprecepitacionSigloXXI.webm"
+              type="video/webm"
+            />
+            Your brow g-0ser does not support the video tag.
+          </video>
+        </aside>
+        <section
+          class="col-12 col-lg-8 order-1 order-lg-2"
+          id="contenidoCentro"
+        >
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 col-xl-6">
+              <video autoplay muted>
+                <source src="./video/banner.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <menu>
+            <ul class="row g-0 justify-content-center">
+              <li class="col-6 col-sm-3">
+                <a class="btn btn-secondary" href="index.html">Coches</a>
+              </li>
+              <li class="col-6 col-sm-3">
+                <a class="btn btn-secondary" href="index.html">Bicicletas</a>
+              </li>
+              <li class="col-6 col-sm-3">
+                <a class="btn btn-secondary" href="index.html">Monopatines</a>
+              </li>
+              <li class="col-6 col-sm-3">
+                <a class="btn btn-secondary" href="index.html">Motos</a>
+              </li>
+            </ul>
+          </menu>
+          <div class="row g-0 justify-content-center articleContainer mt-3">
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen1.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen2.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen3.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen4.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen1.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen2.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen3.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen4.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen1.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen2.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen3.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen4.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen1.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen2.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen3.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+            <article class="col-6 col-sm-4 col-lg-3 col-xl-2">
+              <h3>Nuevo vehículo</h3>
+              <div>
+                <a href="/detalleProducto.html"
+                  ><img src="./imgs/imagen4.jfif" alt=""
+                /></a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <aside class="col-12 col-lg-2 order-3 order-lg-3">
+          <div>
+            <h3>Cantidad de CO2 ahorrada</h3>
+            <span>568.659 Kg</span>
+            <img src="./imgs/Desierto.jpg" alt="Desierto" />
+            <img src="./imgs/Sequia1.jpg" alt="Desierto" />
+            <img src="./imgs/Sequia2.jpg" alt="Desierto" />
+          </div>
+          <h3>¿Dónde estamos?</h3>
+          <img src="./imgs/mapa.png" alt="Mapa ciudad" />
+        </aside>
+      </div>
+    </div>
+    <div class="container">
+      <footer class="row">
+        <div
+          class="col-6 col-lg-2 order-2 order-lg-1 d-flex justify-content-center rrss"
+        >
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+        <div class="col-12 col-lg-8 order-1 order-lg-2 linksFooter">
+          <div class="row">
+            <div class="col-12 text-center">
+              <a href="index.html">Contacto</a>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+              <a href="index.html">Aviso legal</a>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+              <a href="index.html">Privacidad</a>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+              <a href="index.html">Condiciones de uso</a>
+            </div>
+            <div class="col-6 col-sm-3 text-center">
+              <a href="index.html">Condiciones de venta</a>
+            </div>
+            <div class="col-12 text-center">
+              <a href="index.html">Información de derechos</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-6 col-lg-2 order-3 order-lg-3 d-flex justify-content-center pagos"
+        >
+          <i class="bi bi-paypal"></i>
+          <i class="bi bi-credit-card"></i>
+          <i class="bi bi-credit-card"></i>
+          <i class="bi bi-credit-card"></i>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

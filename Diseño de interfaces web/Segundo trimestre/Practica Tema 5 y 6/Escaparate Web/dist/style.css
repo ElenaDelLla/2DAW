@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Merriweather:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+body {
+  font-family: "Merriweather", serif;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+img,
+video {
+  width: 100%;
+}
+
+menu {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: black;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #565e64;
+  color: #f7f6dc;
+}
+
+.btn {
+  color: black;
+}
+.btn.btn-primary {
+  background-color: #b1d7b4;
+}
+.btn.btn-secondary {
+  background-color: #f7f6dc;
+}
+
+header {
+  background-color: #b1d7b4;
+}
+header .contenedorNavYBotones {
+  padding: 15px 0px;
+}
+header .contenedorNavYBotones nav ul li {
+  text-align: center;
+  position: relative;
+  padding: 0px 20px;
+  border-right: 1px black solid;
+}
+header .contenedorNavYBotones nav ul li a {
+  color: black;
+}
+header .contenedorNavYBotones nav ul li:last-of-type {
+  border-right: none;
+}
+header .contenedorNavYBotones .fa-1x {
+  font-size: 1.5rem;
+}
+header .contenedorNavYBotones .navbar-toggler.toggler-example {
+  cursor: pointer;
+}
+header .contenedorNavYBotones .dark-blue-text {
+  color: #0a38f5;
+}
+header .fixed-top {
+  background-color: #b1d7b4;
+}
+header .line {
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contenidoCentro {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.contenidoCentro menu ul li {
+  text-align: center;
+}
+.contenidoCentro menu ul li .overA {
+  background-color: #565e64;
+  color: #f7f6dc;
+}
+.contenidoCentro .carousel .carousel-inner {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+.contenidoCentro .fondoImagen {
+  background-color: #ffc090;
+}
+
+footer {
+  padding-top: 30px;
+  margin-bottom: 60px;
+  border-top: black 3px solid;
+}
+footer .rrss {
+  font-size: 40px;
+}
+footer .linksFooter a {
+  text-decoration: underline;
+  color: cadetblue;
+}
+footer .linksFooter a.colorHover {
+  color: #ffc090;
+}
+footer .pagos {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 576px) {
+  header .contenedorNavYBotones nav ul li {
+    border: none;
+  }
+}

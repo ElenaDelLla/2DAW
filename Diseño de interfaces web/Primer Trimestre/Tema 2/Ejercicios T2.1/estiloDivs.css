@@ -1,0 +1,18 @@
+.red{
+    background-color: red;
+    width: 3%;
+    padding: 3%;
+    float: right;
+}
+.yellow{
+    background-color: yellow;
+    width: 3%;
+    padding: 3%;
+    float: right;
+}
+.green{
+    background-color: greenyellow;
+    width: 3%;
+    padding: 3%;
+    float: right;
+}

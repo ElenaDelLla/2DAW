@@ -1,0 +1,57 @@
+.rojo {
+  background-color: red;
+  height: 20px;
+}
+
+.naranja {
+  background-color: orange;
+  height: 100px;
+}
+
+.amarillo {
+  background-color: yellow;
+  height: 100px;
+}
+
+.azul {
+  background-color: blue;
+  height: 100px;
+}
+
+.rosa {
+  background-color: pink;
+  height: 100px;
+}
+
+.verde {
+  background-color: green;
+  height: 100px;
+}
+div {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .amarillo {
+    background-color: orange;
+  }
+  .naranja {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 576px) {
+  .verde {
+    height: 100px;
+  }
+  .rosa{
+    height: 200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .verde,
+  .azul {
+    height: 130px;
+  }
+}

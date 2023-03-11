@@ -1,0 +1,23 @@
+@backgrounds-path: "/logos/";
+.clase {
+  border: 1 solid red;
+  background-image: url("@{backgrounds-path}logo.jpg");
+}
+.font(@size:20px) {
+  font-family: verdana;
+  font-size: @size;
+}
+.clase2 {
+  .clase;
+  .font;
+}
+.clase3 {
+  .clase;
+  .font(40px);
+}
+.clase4 {
+  margin-bottom: 25px;
+}
+.clase5 {
+  .clase4;
+}

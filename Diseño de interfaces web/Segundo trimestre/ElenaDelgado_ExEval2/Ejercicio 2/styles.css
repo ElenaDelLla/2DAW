@@ -1,0 +1,34 @@
+.rojo {
+  background-color: red;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding: 70px 0px;
+}
+.amarillo {
+  padding: 40px 0px;
+  background-color: yellow;
+  font-weight: bold;
+  text-align: center;
+}
+
+.azul {
+  background-color: blue;
+  padding: 40px 0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.rosa {
+  background-color: pink;
+  padding: 20px 20px;
+  font-weight: bold;
+}
+
+.verde {
+  background-color: green;
+  text-align: center;
+  padding: 20px 0px;
+  font-style: italic;
+  font-weight: bold;
+}

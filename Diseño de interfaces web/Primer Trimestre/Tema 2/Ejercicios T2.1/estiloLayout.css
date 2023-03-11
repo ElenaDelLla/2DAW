@@ -1,0 +1,41 @@
+header, footer, nav{
+    position: static;
+}
+.float{
+    float: right;
+}
+header{
+    border: solid 3px blue;
+    border-radius: 3px;
+}
+nav{
+    outline: dotted 1px green;
+    float: left;
+    width: 30%;
+}
+section {
+    float: left;
+    width: 40%;
+}
+aside{
+    float: left;
+    width: 30%;
+}
+footer{
+    clear: both;
+    border: solid 3px red;
+}
+.sev:hover{
+    background-color: red;
+}.mad:hover{
+    background-color: olivedrab;
+}
+.gran:hover{
+    background-color: gray;
+}
+.ovie:hover{
+    background-color: burlywood;
+}
+p{
+    text-align: center;
+}

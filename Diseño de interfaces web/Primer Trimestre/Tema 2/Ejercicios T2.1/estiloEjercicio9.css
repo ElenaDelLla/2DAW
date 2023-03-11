@@ -1,0 +1,12 @@
+h2::first-letter{
+    font-size: 100px;
+}
+a::before{
+    content: "→";
+}
+abbr::after{
+    content: " ("attr(title)")";
+}
+ h2+p {
+    text-indent: 2em;
+}

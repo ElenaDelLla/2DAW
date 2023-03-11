@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>EJERCICIO 1</title>
+    <style>
+      #caja{
+        height:60px; 
+        width:100px; 
+        text-align:center; 
+        border:2px solid black;
+      }
+      .div1{
+        display:flex; 
+        flex-direction:column; 
+        justify-content:center;
+      }
+      #btn1{
+        width:100px;
+      }
+    </style>
+  </head>
+  <body>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+
+<div class="div1">
+<button type="button" name="button" id="btn1">Ver Aviso</button>
+<div  id="caja">
+Esto es un consejo
+</div>
+</div>
+
+<script>
+
+
+  $("#btn1").click(function(){
+  $("#caja").slideUp(2000);
+  $("#caja").css("color", "red");
+  });
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body{
+    border: solid red 5px;
+}
+header,nav,footer, .derecha , .izquierda{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+header{
+    background-color: #E4BC7A;
+    padding: 10px;
+}
+nav{
+    background-color: #C7CACC;
+    padding: 10px;
+}section{
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+}
+.derecha{
+    background-color: #BDD1EF;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+.izquierda{
+    background-color: #DAF7E1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+footer{
+    background-color: #D3D1C1;
+    padding: 10px;
+}

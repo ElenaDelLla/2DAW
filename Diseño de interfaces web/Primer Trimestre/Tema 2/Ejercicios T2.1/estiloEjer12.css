@@ -1,0 +1,59 @@
+
+body {
+  text-align: center;
+  height: 90vh;
+}
+header {
+  text-align: center;
+  clear: both;
+  background-color: orange;
+  border: 3px solid blue;
+  border-radius: 10px;
+}
+.super{
+    float: left;
+}
+nav {
+  background-color: red;
+  float: left;
+  width: 30%;
+  height: 70vh;
+  clear: both;
+  border: 1px dotted greenyellow;
+  padding-left: 15px;
+}
+.sev:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+.mad:active{
+    color: coral;
+}
+.gran:hover{
+    font-size: larger;
+    color: aquamarine;
+}
+.ovie:active{
+    text-transform: uppercase;
+    color: chartreuse;
+}
+#container {
+  width: 700px;
+  margin: 0px auto;
+  text-align: left;
+  height: 100%;
+}
+.otono {
+  float: right;
+  width: 200px;
+}
+article {
+  margin-left: 225px;
+  padding-left: 10px;
+}
+footer {
+  background-color: green;
+  clear: both;
+  border: 3px solid orange;
+  border-radius: 10px;
+}

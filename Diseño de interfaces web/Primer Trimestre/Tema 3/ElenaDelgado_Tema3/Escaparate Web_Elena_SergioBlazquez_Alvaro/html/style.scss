@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Merriweather:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+// comienzo declaraciones mixin
+@mixin fuentePrincipal {
+  font-family: "Merriweather", serif;
+}
+@mixin fuenteSecundaria {
+  font-family: "Inconsolata", monospace;
+}
+// fin declaraciones mixin
+
+// comienzo declaracion variables
+$colorPrincipal: #b1d7b4;
+$colorSecundario: #f7f6dc;
+$colorTerciario: #ffc090;
+$colorOscuro: black;
+$colorEnlaces: cadetblue; // fin declaracion variables
+// Comienzo estilos genericos
+body {
+  @include fuentePrincipal;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $colorOscuro;
+  font-weight: bold;
+}
+//Fin estilos genericos
+
+//comienzo modificacion estilos boostrap
+.btn.btn-primary,
+.btn.btn-secondary {
+  color: $colorOscuro;
+}
+.btn-outline-secondary:hover {
+  background-color: $colorPrincipal;
+}
+
+.btn {
+  color: $colorOscuro;
+  &.btn-primary {
+    background-color: $colorPrincipal;
+  }
+  &.btn-secondary {
+    background-color: $colorSecundario;
+  }
+}
+
+//fin modificacion estilos boostrap
+
+// comienzo estilos cabecera
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: $colorPrincipal;
+  padding: 20px;
+  .cabecera {
+    display: flex;
+    .logo {
+      height: 100px;
+    }
+    h1 {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-self: center;
+    }
+  }
+  .contenedorNavYBotones {
+    display: flex;
+    justify-content: space-around;
+    nav {
+      display: flex;
+      justify-content: center;
+      ul {
+        display: flex;
+        li {
+          margin: 0px 10px;
+          padding-right: 20px;
+          border-right: 1px black solid;
+          a {
+            color: $colorOscuro;
+          }
+          &:last-of-type {
+            padding-right: 0px;
+            border-right: none;
+          }
+        }
+      }
+    }
+    .botones {
+      display: flex;
+      > * {
+        margin-left: 10px;
+      }
+      .busqueda {
+        width: 120px;
+      }
+    }
+  }
+}
+// fin estilos cabecera
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  menu {
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      li {
+        margin: 0px 10px;
+      }
+    }
+  }
+  .contenedorCentral {
+    display: flex;
+    > * {
+      margin: 0px 30px;
+    }
+
+    .contenidoIzq {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      max-width: 300px;
+      img {
+        width: 300px;
+      }
+      h3{
+        margin-top: 30px;
+      }
+    }
+    .contenidoCentro {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      .banner{
+        max-height: 300px;
+      }
+      .articleContainer{
+        display: flex;
+        flex-wrap: wrap;
+        > * {
+          flex-basis: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+    .contenidoDer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      max-width: 300px;
+      img {
+        max-width: 300px;
+      }
+      h3{
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+footer {
+  margin: 20px;
+  padding-top: 20px;
+  border-top: black 3px solid;
+  display: flex;
+  justify-content: space-around;
+  .rrss {
+    font-size: 40px;
+    > * {
+      margin: 0px 5px;
+    }
+  }
+  .linksFooter {
+    display: flex;
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 0px 20px;
+      a {
+        text-decoration: underline;
+        color: $colorEnlaces;
+      }
+    }
+  }
+  .pagos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    > * {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .contenedorNavYBotones{
+    flex-direction: column;
+  }
+  .contenedor{
+    menu{
+      ul{
+        flex-wrap: wrap;
+      }
+    }
+    .contenedorCentral {
+      flex-direction: column;
+    }
+  }
+  footer{
+    flex-direction: column;
+    .rrss{
+      display: flex;
+      justify-content: center;
+    }
+    .pagos{
+      flex-wrap: nowrap;
+    }
+  }
+
+}

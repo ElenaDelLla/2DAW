@@ -1,0 +1,53 @@
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+a {
+  color: #089ae1;
+}
+
+header {
+  width: 100%;
+}
+header .contenedorEnlaces {
+  float: right;
+}
+header .contenedorEnlaces ul {
+  display: flex;
+}
+header .contenedorEnlaces ul li a {
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+header .contenedorTitulos img {
+  float: left;
+  margin-right: 10px;
+}
+
+.contenedor {
+  clear: both;
+  display: flex;
+}
+.contenedor section {
+  margin: 0px 20px;
+  flex: 2;
+}
+.contenedor .fondo {
+  background-color: salmon;
+  border: 1px solid black;
+  padding: 10px 30px;
+  flex: 1;
+}
+
+.iconos {
+  clear: both;
+}
+.iconos ul {
+  display: flex;
+  justify-content: center;
+}
+.iconos ul li {
+  margin: 0px 10px;
+}

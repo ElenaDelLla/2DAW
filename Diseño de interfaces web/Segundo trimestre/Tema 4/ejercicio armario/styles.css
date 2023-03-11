@@ -1,0 +1,117 @@
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.armario {
+  position: relative;
+}
+.puertaIzquierda,
+.puertaDerecha {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: bisque;
+  top: 0;
+  border: black 1px solid;
+}
+
+.puertaIzquierda {
+  left: 0;
+  animation-name: aperturaIzquierda;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+.puertaDerecha {
+  right: 0;
+  animation-name: aperturaDerecha;
+  animation-duration: 10s;
+  animation-delay: 15s;
+  z-index: 1;
+}
+
+.tiradorIzquierda,
+.tiradorDerecha {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: black 2px solid;
+  border-radius: 50%;
+  background-color: black;
+  top: 50%;
+}
+
+.tiradorIzquierda {
+  left: 20px;
+  animation-name: tiradorIzquierda;
+  animation-duration: 10s;
+  animation-delay: 1s;
+}
+
+.tiradorDerecha {
+  right: 20px;
+  animation-name: tiradorDerecha;
+  animation-duration: 10s;
+  animation-delay: 15s;
+  z-index: 1;
+}
+
+@keyframes aperturaIzquierda {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 50%;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes aperturaDerecha {
+  0% {
+    right: 0;
+  }
+  25% {
+    right: 50%;
+  }
+  50% {
+    right: 50%;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes tiradorIzquierda {
+  0% {
+    left: 20;
+  }
+  25% {
+    left: calc(50% + 20px);
+  }
+  50% {
+    left: calc(50% + 20px);
+  }
+  100% {
+    left: 20;
+  }
+}
+
+@keyframes tiradorDerecha {
+  0% {
+    right: 20;
+  }
+  25% {
+    right: calc(50% + 20px);
+  }
+  50% {
+    right: calc(50% + 20px);
+  }
+  100% {
+    right: 20;
+  }
+}

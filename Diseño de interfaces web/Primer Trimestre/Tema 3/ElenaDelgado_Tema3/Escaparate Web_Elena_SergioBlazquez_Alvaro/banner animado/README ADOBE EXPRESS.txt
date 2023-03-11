@@ -1,0 +1,3 @@
+Para crear el banner animado se ha utilizado el programa web Adobe Express (gratuito) con la técnica de las plantillas gratuitas en la sección de busqueda como "coches". 
+El formato elegido ha sido por medio de la escritura del tipo "Máquina de escribir" para las palabras como coche, bicicletas, monopatines y motos. En cuanto al logo de la empresa que es el "Estilo principal" se ha incluido un tipo de "fuentes recomendadas" que te deja seleccionar el color en las letras. 
+En cuanto al "color" y a la "imagen" se han dejado por defecto las que tenia la plantilla gratuita.

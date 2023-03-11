@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <svg width="600" height="600">
+        <polygon id="triangle" points="160,320 360,320 260,120" fill="grey"/> 
+        <rect x="160" y="320" height="200" width="200" style="stroke:#000; stroke-width:3; fill:#A5292A"></rect>
+        <rect x="80" y="520" height="30" width="360" style="stroke:#000; stroke-width:3; fill:#008001"></rect>
+        <rect x="245" y="440" height="80" width="30" style="stroke:#000; stroke-width:3; fill:#000"></rect>
+        <circle cx="160" cy="320" r="10" fill="red">
+            <animateMotion
+                dur="3s"
+                repeatCount="indefinite"
+                path="M0,0 L200,0 L100,-200 z"
+            />
+            <!--https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/path-->
+        </circle>
+        <rect x="290" y="160" height="80" width="20" style="stroke:#000; stroke-width:3; fill:#000"></rect>
+        <circle cx="300" cy="170" r="8" fill="black">
+           <animate attributeName="cy" attributeType="XML" from="170" to="100" dur="10s" repeatCount="indefinite"></animate>
+        </circle>
+        <circle cx="300" cy="180" r="8" fill="black">
+            <animate attributeName="cy" attributeType="XML" from="180" to="110" dur="15s" repeatCount="indefinite"></animate>
+         </circle>
+    </svg>
+</body>
+</html>

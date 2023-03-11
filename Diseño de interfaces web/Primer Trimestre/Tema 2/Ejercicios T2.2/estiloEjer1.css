@@ -1,0 +1,73 @@
+
+body {
+  text-align: center;
+  height: 90vh; /*El alto que tiene la página completa*/
+}
+header {
+  text-align: center;
+  clear: both;
+  background-color: orange;
+  border: 3px solid blue;
+  border-radius: 10px;
+}
+nav {
+  background-color: red;
+  float: left;
+  width: 30%;
+  height: 70vh; /*Alto que quiero que tenga el nav*/
+  border: 1px dotted greenyellow;
+  padding-left: 15px;
+}
+.sev:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+.mad:active{
+    color: coral;
+}
+.gran:hover{
+    font-size: larger;
+    color: aquamarine;
+}
+.ovie:active{
+    text-transform: uppercase;
+    color: chartreuse;
+}
+.super{
+    float: left;
+}
+#container {
+  width: 700px;
+  margin: 0px auto;
+  text-align: left;
+  height: 100%;
+}
+.otono {
+  float: right;
+  width: 200px;
+}
+footer {
+  background-color: green;
+  clear: both;
+  border: 3px solid orange;
+  border-radius: 10px;
+}
+   /*Grid-view*/
+   * {
+    box-sizing: border-box;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 5px;
+  }
+  .col-2 {
+    width: 16%;}
+  .col-10 {
+    width: 83.33%;}
+  .col-12 {
+    width: 100%;}

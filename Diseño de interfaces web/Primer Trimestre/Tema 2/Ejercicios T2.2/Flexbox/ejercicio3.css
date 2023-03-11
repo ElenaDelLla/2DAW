@@ -1,0 +1,57 @@
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+body{
+    height: 100vh;
+}
+.contenedorHeader{
+    display: flex;
+}
+.nombre{
+    flex-grow: 1;
+    text-align: center;
+    background-color: #FFCA33;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+}
+.logo{
+    background-color: #33FE4C;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.contenedorNav{
+    display: flex;
+}
+.lupa{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #FF3255;
+}
+nav{
+
+    background-color: #FE9C32;
+}
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.encontrado{
+    background-color: #FF32E0;
+    width: 70%;
+    height: 100%;
+    font-weight: bold;
+    font-size: larger;
+    padding-top: 20px;
+
+}
+.vacio{
+    background-color: #33FEDF;
+    height: 100%;
+}

@@ -1,0 +1,16 @@
+.cuadro{
+    border: solid red 2px;
+    background-color:cadetblue;
+    width: 400px;
+    height: 200px;
+    margin: 40px; 
+}
+.center{
+    text-align: center;
+    margin: 55px;
+}
+body{
+    border: solid black 1px;
+    margin: 20px;
+    margin-right: 925px;
+}

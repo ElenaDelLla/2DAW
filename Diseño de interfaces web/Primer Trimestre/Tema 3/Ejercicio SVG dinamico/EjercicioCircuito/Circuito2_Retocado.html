@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>HTML &amp; CSS: Curso práctico avanzado</title>
+<style>
+   img {
+       z-index: 2;
+       position: absolute;
+   }
+   svg {
+       z-index: -1;
+       background-color: aqua;
+       background-image: url(circuito.jpg);
+       background: cover;
+       background-repeat: no-repeat;
+   }
+   #titulo {
+       position: absolute;
+       margin-left: 150px;
+       margin-top: 50px;
+   }
+</style>
+</head>
+<body>
+    <svg width="568px" height="568px">
+    
+        <image id="verde" href="cocheVerde.png" x="-50" y="-50"  width="100" height="100">
+            <animateMotion id="a" dur="5s" fill="freeze" begin="0s;b.end-1s" repeatCount = "indefinite">
+                <mpath href="#camino"/>
+            </animateMotion>
+        </image>
+        <image id="rojo" href="cocheRojo.png" x="-50" y="-50"  width="100" height="100">
+            <animateMotion id="a" dur="5s" fill="freeze" begin="1s;b.end-2s" repeatCount = "indefinite">
+                <mpath href="#camino"/>
+            </animateMotion>
+       
+            <path id="camino" fill="rgba(0,0,0,0.1)" d="
+        M 215 430
+        h 200
+        q 45,0   40,-45
+        v -20
+        q 0,-30 -30,-30
+        q -30,0 -30,-30
+        v -40
+        q 0,-30  30,-30
+        q 30,0   30,-30
+        q 0,-55 -65,-65
+        h -40
+        q -35,0 -45,45
+        v 110
+        c 0 65, -95 65 , -95 0
+        v -50
+        q 0,-35 -45,-40
+        h -70 
+        v 210 
+        q 0 35 40 10
+        h 70      
+                   "/>
+     </svg>
+     
+</body>
+</html>

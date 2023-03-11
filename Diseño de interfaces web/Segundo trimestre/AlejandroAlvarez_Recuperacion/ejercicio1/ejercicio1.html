@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Examen Recuperación 1ª eval DIW</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <span class="box-shadow-menu"> </span>
+
+    <div class="todo">
+      <div class="">
+        <div class="opcion1"></div>
+        <div class="opcion2"></div>
+      </div>
+      <div class="">
+        <div class="opcion3"></div>
+        <div class="opcion4"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".box-shadow-menu").click(function () {
+          $(".box-shadow-menu").slideDown("600", function () {
+            $(".opcion1").addClass("opcion1");
+            $(".opcion1").html("Opcion 1");
+            $(".opcion2").addClass("opcion2");
+            $(".opcion2").html("Opcion 3");
+            $(".opcion3").addClass("opcion3");
+            $(".opcion3").html("Opcion 2");
+            $(".opcion4").addClass("opcion4");
+            $(".opcion4").html("Opcion 4");
+          });
+        });
+      });
+
+      $(document).ready(function () {
+        $(".opcion1").hover(
+          function () {
+            $(this).css("background-color", "#343434");
+          },
+          function () {
+            $(this).css("background-color", "black");
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $(".opcion2").hover(
+          function () {
+            $(this).css("background-color", "#343434");
+          },
+          function () {
+            $(this).css("background-color", "black");
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $(".opcion3").hover(
+          function () {
+            $(this).css("background-color", "#343434");
+          },
+          function () {
+            $(this).css("background-color", "black");
+          }
+        );
+      });
+
+      $(document).ready(function () {
+        $(".opcion4").hover(
+          function () {
+            $(this).css("background-color", "#343434");
+          },
+          function () {
+            $(this).css("background-color", "black");
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

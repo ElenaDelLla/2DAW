@@ -1,0 +1,56 @@
+.contenedor {
+  display: flex;
+}
+
+body {
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em;
+  margin: 1em;
+}
+
+#green {
+  background-color: #baffc9;
+  margin-right: 20px;
+}
+
+#orange {
+  background-color: #ffdfba;
+  flex: 1;
+  margin-right: 20px;
+}
+
+#yellow {
+  background-color: #ffffba;
+  order: -1;
+  margin-right: 20px;
+}
+
+#red {
+  background-color: #ffb3ba;
+  order: -1;
+  margin-right: 20px;
+}
+
+#blue {
+  background-color: #bae1ff;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 1em;
+  display: block;
+  margin: 1em;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    flex-direction: column;
+  }
+}
